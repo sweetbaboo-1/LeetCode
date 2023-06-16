@@ -16,4 +16,8 @@ public class Printer {
     public void print(int x) {
         System.out.println(x);
     }
+
+    public void print(String x) {
+        System.out.println(x);
+    }
 }
