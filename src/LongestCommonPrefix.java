@@ -1,5 +1,3 @@
-import org.jetbrains.annotations.NotNull;
-
 public class LongestCommonPrefix {
 
     /*
@@ -7,7 +5,7 @@ public class LongestCommonPrefix {
     * as soon as they don't all match return the prefix of length score
     * if score = 0 return ""
      */
-    public String longestCommonPrefix(String @NotNull [] strings) {
+    public String longestCommonPrefix(String[] strings) {
         int score = 0;
         int min = Integer.MAX_VALUE;
         for (String s: strings) {
