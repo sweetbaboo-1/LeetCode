@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class TwoSum {
@@ -33,29 +32,5 @@ public class TwoSum {
             }
         }
         return null;
-    }
-
-    public int[] twoSumTwoPointer(int[] numbers, int target) {
-        // sort the list
-        int[] copy = numbers.clone();
-        Arrays.sort(numbers);
-
-        int head = 0;
-        int tail = numbers.length - 1;
-        while (numbers[head] + numbers[tail] != target) {
-            if (numbers[head] + numbers[tail] > target) {
-                tail--;
-            } else {
-                head++;
-            }
-        }
-        int x = -1,y = -1;
-        for (int i = 0; i < copy.length; i++) {
-            if (x == -1 && numbers[head] == copy[i])
-                x = i;
-            else if (y == -1 && numbers[tail] == copy[i])
-                y = i;
-        }
-        return new int[]{y, x};
     }
 }
